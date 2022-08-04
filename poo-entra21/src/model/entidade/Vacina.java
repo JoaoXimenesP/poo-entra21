@@ -1,6 +1,6 @@
-package entidade;
+package model.entidade;
 
-public class VacinaCovid {
+public class Vacina {
 	//Atributos
 	private String paisDeOrigem;
 	private int estagioDePesquisa;
