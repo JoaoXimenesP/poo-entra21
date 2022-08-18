@@ -2,6 +2,7 @@ package model.entidade;
 
 public class Conta {
 	//Atributos
+	private int id;
 	private String numeroAgencia;
 	private String numeroConta;
 	private double saldo;

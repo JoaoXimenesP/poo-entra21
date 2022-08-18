@@ -1,31 +1,42 @@
 package model.entidade;
 
+import java.util.Date;
+
 public class Vacina {
+
 	//Atributos
-	private String paisDeOrigem;
-	private int estagioDePesquisa;
-	
-	private String datadeInicioDaPesquisa;
+	private int id;
+	private String paisOrigem;
+	private int estagioPesquisa;
+	private Date dataInicioPesquisa;
 	private String nomePesquisadorResponsavel;
 	
+	//Métodos
 	
-	public String getPaisDeOrigem() {
-		return paisDeOrigem;
+	//Getters e setters
+	public String getPaisOrigem() {
+		return paisOrigem;
 	}
-	public void setPaisDeOrigem(String paisDeOrigem) {
-		this.paisDeOrigem = paisDeOrigem;
+	public int getId() {
+		return id;
 	}
-	public int getEstagioDePesquisa() {
-		return estagioDePesquisa;
+	public void setId(int id) {
+		this.id = id;
 	}
-	public void setEstagioDePesquisa(int estagioDePesquisa) {
-		this.estagioDePesquisa = estagioDePesquisa;
+	public void setPaisOrigem(String paisOrigem) {
+		this.paisOrigem = paisOrigem;
 	}
-	public String getDatadeInicioDaPesquisa() {
-		return datadeInicioDaPesquisa;
+	public int getEstagioPesquisa() {
+		return estagioPesquisa;
 	}
-	public void setDatadeInicioDaPesquisa(String datadeInicioDaPesquisa) {
-		this.datadeInicioDaPesquisa = datadeInicioDaPesquisa;
+	public void setEstagioPesquisa(int estagioPesquisa) {
+		this.estagioPesquisa = estagioPesquisa;
+	}
+	public Date getDataInicioPesquisa() {
+		return dataInicioPesquisa;
+	}
+	public void setDataInicioPesquisa(Date dataInicioPesquisa) {
+		this.dataInicioPesquisa = dataInicioPesquisa;
 	}
 	public String getNomePesquisadorResponsavel() {
 		return nomePesquisadorResponsavel;
@@ -33,6 +44,10 @@ public class Vacina {
 	public void setNomePesquisadorResponsavel(String nomePesquisadorResponsavel) {
 		this.nomePesquisadorResponsavel = nomePesquisadorResponsavel;
 	}
-	
-	
-}	
+	@Override
+	public String toString() {
+		return "Vacina [id=" + id + ", paisOrigem=" + paisOrigem + ", estagioPesquisa=" + estagioPesquisa
+				+ ", dataInicioPesquisa=" + dataInicioPesquisa + ", nomePesquisadorResponsavel="
+				+ nomePesquisadorResponsavel + "]";
+	}
+}
